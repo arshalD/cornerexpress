@@ -1,0 +1,11 @@
+{
+    "email":["arshaldmathew@gmail.com","devreal@gmail.com"],
+    "arshaldmathew@gmail.com":{
+        "name":"Arshal",
+        "pswd":"arshal"
+    },
+    "devreal@gmail.com":{
+        "name":"Developer",
+        "pswd":"dev"
+    }
+}
