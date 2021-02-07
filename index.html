@@ -1,0 +1,167 @@
+<!-- client id -->
+<!-- 232434670622-vqkcto5r8keam7qlkgqr8iplnhh77fe3.apps.googleusercontent.com -->
+<!-- client secret -->
+<!-- GzhOxKMf3FHH-_AmWpIXko0z -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="232434670622-vqkcto5r8keam7qlkgqr8iplnhh77fe3.apps.googleusercontent.com">
+    <!-- these are the dependencies  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- end of dependencies  -->
+    <title>Corner Express.store</title>
+</head>
+<body>
+    <!-- container of navbar  -->
+    <div id="menubar" class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <div id="nav">
+                  <nav class="navbar navbar-dark ">
+                    <!-- Navbar content -->
+                    
+                    <a href="javascript:main()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+                    <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    </svg> Home</a>
+
+                    <a href="javascript:login()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                    </svg> Buy</a>
+
+                    <a href="javascript:categoriesfn()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-collection" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"/>
+                    </svg> Categories</a>
+
+                  </nav>
+                </div>
+            </div><!-- end of .col-sm 1 -->
+            <div class="col-sm">  
+                <!-- end of #nav | brand name below  -->
+                <div id="name">
+                  <img src="images/shopping-cart.svg" style="height: 40px; width: 40px;">
+                  CORNER EXPRESS
+                </div>
+            </div><!-- end of .col-sm 2 -->
+            <div class="col-sm">   
+                <div id="nav2">
+                  <nav class="navbar navbar-dark ">
+                    <a href="javascript:care()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-headset" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M8 1a5 5 0 0 0-5 5v4.5H2V6a6 6 0 1 1 12 0v4.5h-1V6a5 5 0 0 0-5-5z"/>
+                      <path d="M11 8a1 1 0 0 1 1-1h2v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V8zM5 8a1 1 0 0 0-1-1H2v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1V8z"/>
+                      <path fill-rule="evenodd" d="M13.5 8.5a.5.5 0 0 1 .5.5v3a2.5 2.5 0 0 1-2.5 2.5H8a.5.5 0 0 1 0-1h3.5A1.5 1.5 0 0 0 13 12V9a.5.5 0 0 1 .5-.5z"/>
+                      <path d="M6.5 14a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1z"/>
+                      </svg></a>
+
+                    <a href="javascript:login()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wallet2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                    </svg> </a>
+
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+                    <a href="javascript:deliveryTrue()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.166 8.94C12.696 7.867 13 6.862 13 6A5 5 0 0 0 3 6c0 .862.305 1.867.834 2.94.524 1.062 1.234 2.12 1.96 3.07A31.481 31.481 0 0 0 8 14.58l.208-.22a31.493 31.493 0 0 0 1.998-2.35c.726-.95 1.436-2.008 1.96-3.07zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                    <path fill-rule="evenodd" d="M8 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg></a>
+
+                    <a href="javascript:login()"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg></a>
+
+               </nav>
+              </div>
+            </div><!-- end of .col-sm 3 -->
+        </div> <!-- end of .row -->
+     </div> <!-- end of .container-fluid -->
+    <!-- corousel  -->
+
+    <div id="main"><div class="pulse"></div></div>
+      
+
+    <div id="main2"></div>
+
+      <!-- footer  -->
+
+      <div class="container-fluid rounded align-self-end" id="footer">
+        <div class="row">
+          <div class="col-sm">
+            <h5>POLICY</h5>
+            <a href="javascript:retrn()">Return Policy</a></br>
+            <a href="javascript:termsandcond()">Terms & Conditions</a></br>
+          </div>
+          <div class="col-sm">
+            <h5>SOCIAL</h5>
+            <a href="https://www.facebook.com/RIGHT-CLICK-298108181091434/?view_public_for=298108181091434" target="blank">Facebook</a></br>
+            <a href="https://www.youtube.com/watch?v=8exM6VUgZFA" target="blank">Youtube</a></br>
+            <a href="https://mobile.twitter.com/login" target="blank">Twitter</a></br>
+          </div>
+          <div class="col-sm">
+            <h5>HELP</h5>
+            <a href="javascript:faqfn()">FAQs</a></br>
+            <a href="javascript:care()">Customer Care</a></br>
+            
+          </div>
+          <div class="col-sm">
+            <h5>ABOUT</h5>
+            <a href="javascript:contactfn()">Contact Us</a></br>
+            <a href="https://rightcllikk.blogspot.com/" target="blank">Blog</a></br>
+          </div></br>
+          <div class="col-sm">
+           <h5> Registered Office Address:</h5>
+           <p>
+               Corner Express Private Limited,</br>
+               Buildings Alyssa, Begonia &</br>
+               Clove Embassy Tech Village,</br>
+               Outer Ring Road, Devarabeesanahalli Village,</br>
+               Bengaluru, 560103,</br>
+               Karnataka, India</br>
+               <a href="tel:1800 208 9898">
+                Telephone: 1800 208 9898</a>
+          </p>
+          </div>
+        </div><!--end of row-->
+        <div class="row">  
+          <div class="col-lg">
+            <h6>&copy;All copyrights reserved 2020</h6>
+          </div>
+        </div><!--end of row-->
+      </div><!--end of footer-->
+      <!-- ------------------------------------------firebase auth part---------------------------------------------------------------- -->
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+      
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+      
+      
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      
+      <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+      <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+      
+      <!-- ------------------------------------------firebase auth part---------------------------------------------------------------- -->
+      <script src="https://apis.google.com/js/platform.js" async defer></script>
+      <script>
+        function onSignIn(googleUser) {
+          api.use(restify.plugins.queryParser({ mapParams: false }));
+          var profile = googleUser.getBasicProfile();
+          console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+          console.log('Name: ' + profile.getName());
+          console.log('Image URL: ' + profile.getImageUrl());
+          console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
+      
+  </body>
+</html>
